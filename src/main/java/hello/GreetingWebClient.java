@@ -10,7 +10,7 @@ public class GreetingWebClient {
 	private WebClient client = WebClient.create("http://localhost:8080");
 
 	private Mono<ClientResponse> result = client.get()
-			.uri("/hello")
+			.uri("/email")
 			.accept(MediaType.TEXT_PLAIN)
 			.exchange();
 
